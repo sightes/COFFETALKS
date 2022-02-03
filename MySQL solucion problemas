@@ -1,0 +1,17 @@
+MySql Public Key Retrieval is not allowed
+You should add client option to your mysql-connector allowPublicKeyRetrieval=true and useSSL=false. Example connection string:
+
+jdbc:mysql://localhost:3306/db?allowPublicKeyRetrieval=true&useSSL=false
+For DBeaver users v7.0.0+
+
+Right click your connection, choose "Edit Connection"
+On the "Connection settings" screen (main screen) click on "Driver Properties" tab
+Set the property allowPublicKeyRetrieval to true and useSSL to false
+
+
+
+---------------------
+
+
+
+FUENTE para corregir problemas conexion https://stackoverflow.com/questions/5755819/lost-connection-to-mysql-server-at-reading-initial-communication-packet-syste
